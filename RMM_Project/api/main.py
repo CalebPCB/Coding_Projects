@@ -50,4 +50,3 @@ def receive_system_info(data: SystemInfoIn):
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         db.close()
-        
